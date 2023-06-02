@@ -1,0 +1,150 @@
+html body {
+  background-color: #E5EFEC;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.color-main {
+  background-color: #006443;
+  height: 580px;
+  top: 0;
+  border-radius: 0px 0px 48px 48px;
+}
+
+.text-main {
+  padding-top: 16px;
+}
+
+.text-main h1 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #F8FDFB;
+}
+
+.text-main h5 {
+  margin-top: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #F2F3F4;
+}
+
+.text-main img, .text-main svg {
+  margin-top: 24px;
+}
+
+.form-card {
+  background: #FEFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  padding-bottom: 24px;
+}
+
+.form-card h3 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #07BB82;
+}
+
+.form-card .edit-form select {
+  margin-top: 16px;
+  outline: none;
+  width: 100%;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: #000E09;
+  border: 2px solid #E3E6E8;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2307BB82%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+.form-card .edit-form select:focus {
+  border: 2px solid #03A673;
+}
+
+.form-card .edit-form input {
+  outline: none;
+  margin-top: 16px;
+  width: 100%;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: #000E09;
+  border: 2px solid #E3E6E8;
+  border-radius: 8px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.form-card .edit-form input:focus {
+  border: 2px solid #03A673;
+}
+
+.check-form div {
+  padding-top: 16px;
+  margin-left: 8px;
+}
+
+.check-form div input {
+  background-color: #B6BCC2;
+  cursor: pointer;
+  font-size: 120%;
+}
+
+.check-form div label {
+  font-family: 'Sora', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: #01130d;
+}
+
+.check-form div label a {
+  display: inline-block;
+  font-weight: 600;
+  color: #07BB82;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.check-form div label a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  color: #006443;
+}
+
+.button-form {
+  border: none;
+  margin-top: 16px;
+  width: 100%;
+  padding: 4px 0px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #F8FDFB;
+  background: #03A673;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-form:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #006443;
+}
+/*# sourceMappingURL=style.css.map */

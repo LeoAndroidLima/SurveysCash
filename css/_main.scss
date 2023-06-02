@@ -1,0 +1,36 @@
+html body {
+    background-color: $background;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.color-main {
+    background-color: $green-1;
+    height: 580px;
+    top: 0;
+    border-radius: 0px 0px 48px 48px;
+}
+
+.text-main {
+    padding-top: 16px;
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        color: $white-5;
+    }
+
+    h5 {
+        margin-top: 16px;
+        font-family: 'Sora', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: $white-1;
+    }
+
+    img, svg{
+        margin-top: 24px;
+    }
+}
