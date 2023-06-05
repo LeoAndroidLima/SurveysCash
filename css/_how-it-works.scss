@@ -1,0 +1,49 @@
+.text-works {
+    padding-top: 48px;
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: $black-primary;
+    }
+
+    h4 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: $green-primary;
+    }
+}
+
+.card-works {
+    margin-top: 24px;
+    padding: 16px 8px;
+    background: linear-gradient(180deg, $green-primary 0%, $green-3 100%);
+    border-radius: 16px;
+    height: 280px;
+    
+    div{
+        h3 {
+        
+            margin-top: 16px;
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: $white-6;
+        }
+    
+        p {
+            font-family: 'Sora', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: $background;
+        }
+    }
+    
+}

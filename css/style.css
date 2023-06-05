@@ -5,8 +5,12 @@ html body {
 }
 
 .color-main {
-  background-color: #006443;
-  height: 580px;
+  position: absolute;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#068E79), to(#07BB82));
+  background: linear-gradient(180deg, #068E79 0%, #07BB82 100%);
+  height: 540px;
+  width: 100%;
   top: 0;
   border-radius: 0px 0px 48px 48px;
 }
@@ -30,8 +34,65 @@ html body {
   color: #F2F3F4;
 }
 
-.text-main img, .text-main svg {
+.hand-effect {
   margin-top: 24px;
+  margin-bottom: 60px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+  -webkit-animation: hand-animation 2s linear alternate infinite;
+          animation: hand-animation 2s linear alternate infinite;
+}
+
+@-webkit-keyframes hand-animation {
+  0% {
+    -webkit-transform: translate3d(16px, 0, 0) rotate(4deg);
+            transform: translate3d(16px, 0, 0) rotate(4deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -8px, 0) rotate(-4deg);
+            transform: translate3d(0, -8px, 0) rotate(-4deg);
+  }
+}
+
+@keyframes hand-animation {
+  0% {
+    -webkit-transform: translate3d(16px, 0, 0) rotate(4deg);
+            transform: translate3d(16px, 0, 0) rotate(4deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -8px, 0) rotate(-4deg);
+            transform: translate3d(0, -8px, 0) rotate(-4deg);
+  }
+}
+
+.edit-final-main {
+  margin-top: 16px;
+  display: table;
+}
+
+.edit-final-main img {
+  float: left;
+  margin-right: 24px;
+}
+
+.edit-final-main div {
+  display: table;
+}
+
+.edit-final-main div h2 {
+  font-family: 'Sora' sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000E09;
+}
+
+.edit-final-main div p {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000E09;
 }
 
 .form-card {
@@ -146,5 +207,52 @@ html body {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   background-color: #006443;
+}
+
+.text-works {
+  padding-top: 48px;
+}
+
+.text-works h1 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #01130d;
+}
+
+.text-works h4 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #07BB82;
+}
+
+.card-works {
+  margin-top: 24px;
+  padding: 16px 8px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#07BB82), to(#068E79));
+  background: linear-gradient(180deg, #07BB82 0%, #068E79 100%);
+  border-radius: 16px;
+  height: 280px;
+}
+
+.card-works div h3 {
+  margin-top: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #EFF8F5;
+}
+
+.card-works div p {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #E5EFEC;
 }
 /*# sourceMappingURL=style.css.map */
