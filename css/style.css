@@ -2,6 +2,18 @@ html body {
   background-color: #E5EFEC;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background: #07BB82;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #383636a8;
+  border-radius: 16px;
+  border: 4px solid transparent;
 }
 
 .color-main {
@@ -81,7 +93,7 @@ html body {
 }
 
 .edit-final-main div h2 {
-  font-family: 'Sora' sans-serif;
+  font-family: 'Sora', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -95,11 +107,33 @@ html body {
   color: #000E09;
 }
 
+@media (max-width: 1000px) {
+  .color-main {
+    height: 680px;
+  }
+  .hand-effect {
+    margin-top: 78px;
+    margin-bottom: 120px;
+    rotate: 90deg !important;
+  }
+  .edit-final-main {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  .color-main {
+    height: 580px;
+  }
+}
+
 .form-card {
   background: #FEFFFF;
   border-radius: 12px;
   padding: 16px;
   padding-bottom: 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .form-card h3 {
@@ -209,6 +243,35 @@ html body {
   background-color: #006443;
 }
 
+.form-check-input:checked {
+  background-color: #07BB82 !important;
+  border-color: #07BB82 !important;
+}
+
+.form-check-input:focus {
+  border-color: #07BB82 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+@media (max-width: 1000px) {
+  .edit-form select {
+    font-size: 24px !important;
+  }
+  .edit-form input {
+    font-size: 24px !important;
+  }
+  .check-form div {
+    margin-left: 16px;
+  }
+  .check-form div input {
+    font-size: 180%;
+  }
+  .button-form {
+    font-size: 32px;
+  }
+}
+
 .text-works {
   padding-top: 48px;
 }
@@ -231,6 +294,8 @@ html body {
 }
 
 .card-works {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 24px;
   padding: 16px 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(#07BB82), to(#068E79));
@@ -254,5 +319,85 @@ html body {
   line-height: 20px;
   text-align: center;
   color: #E5EFEC;
+}
+
+@media (max-width: 1000px) {
+  .card-works {
+    height: 360px;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  .card-works {
+    height: 260px;
+  }
+}
+
+.footer-edit {
+  margin-top: 48px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#07BB82), to(#068E79));
+  background: linear-gradient(180deg, #07BB82 0%, #068E79 100%);
+  height: 100%;
+}
+
+.text-primary-footer h5 {
+  margin-top: 32px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F2F3F4;
+}
+
+.text-footer-click a {
+  margin-top: 16px;
+  display: inline-block;
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #E5EFEC;
+  margin-left: 24px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-footer-click a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  color: #006443;
+}
+
+.text-footer-final {
+  padding-top: 24px;
+}
+
+.text-footer-final p {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F2FBF8;
+}
+
+.text-footer-final p a {
+  font-weight: 800;
+  margin-left: 8px;
+  color: #E5EFEC;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-footer-final p a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  color: #006443;
 }
 /*# sourceMappingURL=style.css.map */

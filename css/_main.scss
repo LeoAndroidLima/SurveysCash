@@ -2,8 +2,19 @@ html body {
     background-color: $background;
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 0.5em;
+    background: $green-primary;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #383636a8;
+    border-radius: 16px;
+    border: 4px solid transparent;
+}
 
 .color-main {
     position: absolute;
@@ -58,7 +69,7 @@ html body {
 }
 
 .edit-final-main {
-    
+
     margin-top: 16px;
     display: table;
 
@@ -69,20 +80,50 @@ html body {
 
     div {
         display: table;
+
         h2 {
-            font-family: 'Sora' sans-serif;
+            font-family: 'Sora', sans-serif;
             font-weight: 700;
             font-size: 24px;
             line-height: 30px;
 
             color: #000E09;
         }
-        p{
+
+        p {
             font-family: 'Sora', sans-serif;
             font-weight: 400;
             font-size: 16px;
-            color: #000E09; 
+            color: #000E09;
         }
     }
 
+}
+
+@media (max-width: 1000px) {
+    .color-main {
+       
+        height: 680px;
+       
+    }
+    .hand-effect {
+        margin-top: 78px;
+        margin-bottom: 120px;
+        rotate: 90deg !important;
+    }
+
+
+    .edit-final-main {
+
+        margin-top: 16px;
+       
+    }
+
+    @media (orientation: landscape) {
+        .color-main {
+            height: 580px;
+           
+        }
+
+    }
 }
